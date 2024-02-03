@@ -1,0 +1,160 @@
+body {
+    font-family: 'Lato', sans-serif;
+    FONT-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*Header Stuff Here*/
+header {
+    background-color:#eaeaea;
+    padding: 1rem 2vw ;
+}
+header h1 {
+    margin: 0;
+    color: #373ca6;
+}
+header p {
+    margin: 0;
+    color: #373ca6;
+    letter-spacing: .5px;
+}
+
+/*nav stuff goes here*/
+nav{
+    background-color: #d94141; /*Deep faded red color*/
+}
+nav ul {
+  list-style-type: none;  
+padding: 0 2vw;
+margin:0;
+display:flex;
+}
+nav a {
+    font-size:1.1rem;
+    text-decoration: none;
+    color:#dbf2c4;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #373ca6;
+        color: #dbf2c4;
+}
+
+/* Stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1{
+    color:#b40412;
+    font-size: 300;
+    font-weight: 500
+}
+
+/*The colors in the h2 tag are different from the chosen color pallette so they can could have greater contras*/
+/* CSS for generations.html */
+.generations-heading {
+    color: #024873;  
+    font-style: normal;
+    background-color: #ffe0b2;  /* Beige background */
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #8d6e63;  /* Brown border */
+    border-radius: .5rem;
+}
+/* CSS for index.html */
+.index-heading {
+    color: #024873;  
+    font-style: normal;
+    background-color: #ffe0b2;  /* Beige background */
+    padding: .5rem;
+    border: 1px solid #8d6e63;  /* Brown border */
+    border-radius: .5rem;
+    /* No predefined width for the box */
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #dbf2 ;
+}
+
+main ul {
+    list-style-type:circle;
+    background-color: #dbf2;
+}
+
+main dl dt{
+    color: #b40412;
+    font-weight: 700;
+}
+main dl dd{
+    color: #024873;
+    font-size: .9rem;    
+}
+
+
+main li{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+}
+main address {
+    font-style: normal;
+    background-color: #F2B705;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+}
+main a {
+    color: #024873;
+    
+}
+main a:hover {
+    color: rgb(239,0,24);
+    
+}
+
+/*footer stuff here*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0; 
+    font-size: .8rem;
+    
+}
+footer a {
+    color: #024873;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
