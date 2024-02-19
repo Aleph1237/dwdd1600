@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title> HistoGamers.com: Home</title>
+        <link rel="stylesheet" href="traveler.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Your Ultimate Resource to Game Collecting and Preservation">
+        <meta name="author" content="Corbin Woods">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <h1>HistoGamers.com</h1>
+            <p>Your Ultimate Resource to Game Collecting and Preservation</p>
+    </header>
+    
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">History of Gaming</a></li>
+                <li><a href='generations.html'>Consoles/Computers by Generation</a></li>
+                <li><a href="images.html">Reference Images</a></li>
+                <li  class="active"><a href="contact.html">Contact Us</a></li>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>Contact Us</h1>
+        <form method="get" class="myForm" action="thanks.html">
+        
+        <fieldset> <!-- This groups everything into a box with the <legend> label-->
+        <legend>User Information</legend>
+        <label>Name*<input type="text" name="fname" required placeholder="First Name Here"> <!-- first name form-->
+            </label>  
+        <label>Username*<input type="text" name="uname" required placeholder="User Name here">
+            </label>
+        <label>Email Address*<input type="email" name="email" required placeholder="Enter your Email here"> 
+            </label>
+        <label>Telephone*<input type="tel" name="phone" required placeholder="Enter your phone number here"> 
+            </label>
+        </fieldset>   
+            
+        <fieldset>
+        <legend>Do you have an account with us?</legend>  
+            <label><input type="radio" name="method" value="New User">No, I'm a New user</label>
+            <label><input type="radio" name="method" value="Old User">Yes, I have an account</label>
+            <label><input type="radio" name="method" value="Enigma User">I don't know if I have an account</label>
+            </fieldset>    
+            
+            
+        <fieldset>
+            <legend>Join Our Mailing List?</legend>
+            <label><input type="checkbox" name="yes" value="chosen"> Subscribe to power-ups, cheat codes, and epic quests</label>
+            <label><input type="checkbox" name="notifications" value="chosen"> Receive in-game notifications, messages, and updates</label>
+            <label><input type="checkbox" name="driveway" value="chosen">Only necessary emails to level up your gaming experience</label>
+            <label><input type="checkbox" name="no" value="chosen"> No, I prefer to embark on solo adventures</label>
+                </fieldset>
+ 
+            
+            <fieldset>
+                <label>Message Type
+            <select name="time">
+            <option value="none">Please Select</option>
+            <option value="comment">Comment</option>
+            <option value="suggestion">Suggestion</option>    
+            <option value="error">Technical Error in content</option>
+            <option value="typo">Typo in Content</option>
+            <option value="question">Question</option>
+            <option value="other">other</option>   
+            </select>
+                </label>
+            </fieldset>
+            
+            <label>Your Message
+                <textarea name="comments"></textarea>
+            </label>
+            
+            
+            
+            
+            
+            
+            
+        <input type="submit" value="Submit Comments">   <!-- button to submit info, redirects to another page after 5 seconds-->
+        </form>
+    </main>
+    
+    <!-- start the page footer -->
+    <footer> 
+            <p>&copy; 2024 &bull; Corbin Woods &bull; <a href="mailto:10824194@uvu.edu">Email Us</a> <a href="tel:3853300340">Call Us (Google Voice)</a> </p>
+    </footer>
+</body>
+</html>
