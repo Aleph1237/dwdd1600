@@ -99,7 +99,7 @@ main a {
     color: #43a0b6;
     font-size: .8rem;
 }
-.myForm lagel{
+.myForm label{
     margin: .5rem;
 }
 .myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm textarea{
