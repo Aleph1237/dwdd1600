@@ -137,7 +137,7 @@ main h1{
 
 
 main h2{
-    margin: .5rem 0 .8rem 1rem;
+    margin: .5rem 0 .8rem .5rem;
 }
 
 
@@ -166,7 +166,7 @@ main h2{
 
 main p {
     color: #2f3133;
-    margin: 0 0 .3rem 1rem;
+    margin: 0 0 .3rem .5rem;
 }
 
 main ol {
