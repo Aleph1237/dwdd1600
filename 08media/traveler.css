@@ -1,0 +1,393 @@
+/*prevent box provlems*/
+* {box-sizing:border-box;}
+
+body {
+    font-family: 'Lato', sans-serif;
+    FONT-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*Header Stuff Here*/
+header {
+    background-color:#eaeaea;
+    padding: 1rem 2vw ;
+    display:flex;
+    align-items: flex-end;
+}
+header h1 {
+    margin: 0;
+    color: #373ca6;
+}
+
+header p {
+    margin: 0;
+    color: #373ca6;
+    letter-spacing: .5px;
+}
+
+/* Small screen nav code */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav li {
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+        border-bottom: solid 1px #aaa;
+        color: #373ca6;
+        background-color: #b64e11; /* Deep faded red color */
+    }
+
+    nav li a {
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #373ca6;
+    }
+
+    nav li.active {
+        background-color: #373ca6;
+        background-image: linear-gradient(to bottom, #373ca6, #999FE0);
+    }
+   
+    nav li.active a {
+        color: #dbf2c4; /* Set the text color for the active anchor element */
+    }
+    
+}
+/* End of media query */
+
+
+
+
+
+
+/*Big screens nav code*/
+@media only screen and (min-width: 801px) {   
+
+nav{
+    background-color: #b64e11; /*Deep faded red color*/
+}
+nav ul {
+  list-style-type: none;  
+padding: 0 2vw;
+margin:0;
+display:flex;
+}
+nav a {
+    font-size:1.1rem;
+    text-decoration: none;
+    color:#024873;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #373ca6;
+        color: #dbf2c4;
+}
+
+}
+
+
+
+/*Original Nav Code*/
+
+/*
+    nav{
+        background-color: #b64e11; /*Deep faded red color*/
+    } */
+   /* nav ul {
+      list-style-type: none;  
+    padding: 0 2vw;
+    margin:0;
+    display:flex;
+    }
+    nav a {
+        font-size:1.1rem;
+        text-decoration: none;
+        color:#024873;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    nav li.active a {
+        background-color: #373ca6;
+            color: #dbf2c4;
+    }
+        */
+
+
+/* Stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1{
+    color:#b40412;
+    font-size: 300;
+    font-weight: 500
+    margin: .5rem 0 .8rem .5rem;  /*The code doesn't like the first margin, but the 2nd doesn't work without it ¯\_(ツ)_/¯ */
+    margin: .5rem 0 .8rem .5rem;
+}
+
+
+main h2{
+    margin: .5rem 0 .8rem 1rem;
+}
+
+
+
+/*The colors in the h2 tag are different from the chosen color pallette so they can could have greater contras*/
+/* CSS for generations.html */
+.generations-heading {
+    color: #024873;  
+    font-style: normal;
+    background-color: #ffe0b2;  /* Beige background */
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #8d6e63;  /* Brown border */
+    border-radius: .5rem;
+}
+/* CSS for index.html */
+.index-heading {
+    color: #024873;  
+    font-style: normal;
+    background-color: #ffe0b2;  /* Beige background */
+    padding: .5rem;
+    border: 1px solid #8d6e63;  /* Brown border */
+    border-radius: .5rem;
+    /* No predefined width for the box */
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem .5rem;
+}
+
+main ol {
+    padding: .5rem 3vw;
+    background-color: #dbf2 ;
+}
+
+main ul {
+    list-style-type:circle;
+    background-color: #dbf2;
+}
+
+main dl dt{
+    color: #b40412;
+    font-weight: 700;
+}
+main dl dd{
+    color: #024873;
+    font-size: .9rem;    
+}
+
+
+main li{
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+}
+main address {
+    font-style: normal;
+    background-color: #F2B705;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #024873;
+    border-radius: .5rem;
+}
+main a {
+    color: #024873;
+    
+}
+main a:hover {
+    color: rgb(239,0,24);    
+}
+
+figure.wrapped{
+        width: 35%;
+        margin: 0 0 0 2rem;
+        float: right;        
+}
+
+figure.wrapped img{
+    width: 100%;
+    height: auto;   
+}
+
+figure.wrapped figcaption{
+    text-align:center;
+    font-size:.9rem;
+    padding: 0 0 rem 0;
+    margin-top: ; /* Adjust the margin as needed */
+}
+figure.wrapped figcaption {
+    
+    text-align: center;
+    font-size: 1rem; /* Adjust the font size as needed */
+}
+
+/*This commented out part will cause the generations to become their own columns, instead of being vertically organized. I decided this because its easier to visually organize and search*/
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+} 
+/*image padding*/
+div.gallery figure {
+    margin: .5rem 2% 0 0;  
+}
+
+div.gallery figcaption{
+    text-align: left;
+    font-size: 2rem;
+    padding: 0 0 1rem 1rem; /* Makes the caption appear connected to the image above it*/
+    color: #b64e11
+}
+
+.gallery section {
+    flex-basis: 50%;
+    margin: 1rem 0;
+    
+}
+/*.gallery span {
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    color: #895772;*/
+}
+.gallery img {
+    width: 98%;
+    height: auto;
+    
+}
+
+.gallery img:hover {
+    
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* This makes the box shadow appear on the images when the mouse is over them*/
+}
+
+.heroimg {
+    width:100%;
+    margin:0;
+}
+
+.heroimg img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.myForm fieldset {
+    border: 2px solid #b64e11;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+.myForm legend {
+    color: #024873;  
+    font-style: normal;
+    background-color: #ffe0b2;  /* Beige background */
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #8d6e63;  /* Brown border */
+    border-radius: .5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+.myForm label{
+    margin: .5rem;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm textarea{
+    display: block;
+}
+.myForm [type=text], .myForm [type=email], .myForm [type=tel], .myForm select, .myForm textarea{
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+}
+
+.myForm select{
+    border: solid 1px #888; 
+    border-radius: .3rem;
+    font-weight: 400;
+    background-color: #ffe0b2;
+}
+.myForm textarea{
+    height:6rem;
+    width: 32rem
+}
+
+.myForm :required {
+    background-color: #ffe0b2;
+    font-weight: 400;
+}
+
+.myForm [type=submit]{
+    background-color: #b64e11;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+/*Table stuff here*/
+
+table.our-hours{
+    width:100%;
+    border-collapse: collapse;
+}
+
+table.our-hours th{
+    background-color: #b40412;
+    color:white;
+    padding: .5rem 2vw;
+    text-align: left;
+}
+
+table.our-hours td{
+    color:#54691f;
+    padding: .4rem 2wv;
+}
+
+table.our-hours tr:nth-child(odd){
+    background-color: #f7f7f7;
+}
+
+table.our-hours tr:hover{
+    background-color: rgba(55, 60, 166, .3);
+}
+
+
+
+
+/*footer stuff here*/
+
+footer {
+    clear:both;
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0; 
+    font-size: .8rem;
+    
+}
+footer a {
+    color: #024873;    
+}
+
+/*Limits the width of the site*/
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
